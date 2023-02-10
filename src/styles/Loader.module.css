@@ -1,0 +1,31 @@
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px dashed teal;
+    animation: rotate 1s infinite linear;
+}
+
+.menuLoader {
+    animation: sway 2s infinite ease-in-out alternate-reverse forwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sway {
+    0% {
+        transform-origin: 50% 0;
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform-origin: 50% 0;
+        transform: rotate(15deg);
+    }
+}
